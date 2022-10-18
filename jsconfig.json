@@ -1,0 +1,12 @@
+{
+   "compilerOptions": {
+      "baseUrl": "src",
+      "paths": {
+         "@models": ["models"],
+         "@routes": ["routes"],
+         "@services": ["services"],
+         "@databases": ["databases"],
+         "@controllers": ["controllers"]
+      }
+   }
+}

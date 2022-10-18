@@ -1,0 +1,45 @@
+{
+   "name": "node-mongo-as02",
+   "version": "1.0.0",
+   "private": true,
+   "homepage": "/",
+   "license": "LICENSE",
+   "readme": "README.md",
+   "markdown": "github",
+   "publisher": "@pmfoysal",
+   "description": "NodeJS &amp; MongoDB Advanced Crash Course - Assignment 02! Live: https://node-mongo-as02.onrender.com",
+   "author": {
+      "name": "Foysal Ahmmed",
+      "email": "pmfoysal@gmail.com",
+      "url": "https://github.com/pmfoysal"
+   },
+   "categories": [
+      "Programming Languages",
+      "Data Science",
+      "Education",
+      "Language Packs",
+      "Machine Learning",
+      "Other"
+   ],
+   "keywords": [
+      "nodejs",
+      "expressjs",
+      "mongodb",
+      "tour-management",
+      "crud-application"
+   ],
+   "repository": {
+      "type": "github",
+      "url": "https://github.com/pmfoysal/node-mongo-as02"
+   },
+   "scripts": {
+      "dev": "nodemon index.js",
+      "start": "node index.js"
+   },
+   "dependencies": {
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "mongoose": "^6.6.5"
+   }
+}
