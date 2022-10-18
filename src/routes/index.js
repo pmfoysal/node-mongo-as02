@@ -1,6 +1,6 @@
 const api = require('./apis');
 const root = require('express').Router();
-const middlewares = require('@middlewares');
+// const middlewares = require('@middlewares');
 
 function routes(port) {
    root.route('/').get((req, res, nex) => {
@@ -11,7 +11,7 @@ function routes(port) {
       nex();
    });
    root.use('/api', api);
-   root.use(middlewares.errorHandler);
+   // root.use(middlewares.errorHandler);
    return root;
 }
 
