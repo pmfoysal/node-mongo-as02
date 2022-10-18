@@ -4,6 +4,7 @@ const cors = require('cors');
 require('./utilities/pathAlias')();
 const express = require('express');
 const routes = require('./src/routes');
+const connectDB = require('@databases').mongoDB;
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -14,4 +15,5 @@ app.use('/', routes(port));
 
 app.listen(port, () => {
    console.log(`App is running on port: ${port}`.blue.bold);
+   connectDB();
 });
