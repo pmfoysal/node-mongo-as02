@@ -6,7 +6,8 @@
          "@routes": ["routes"],
          "@services": ["services"],
          "@databases": ["databases"],
-         "@controllers": ["controllers"]
+         "@controllers": ["controllers"],
+         "@middlewares": ["middlewares"]
       }
    }
 }
