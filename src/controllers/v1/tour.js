@@ -17,7 +17,22 @@ exports.getTrending = async (req, res, nex) => {
    }
 };
 
-exports.getCheapest = async (req, res, nex) => {};
+exports.getCheapest = async (req, res, nex) => {
+   try {
+      const result = await tour?.getCheapest(req?.query);
+      res.status(200).send({
+         status: 'Success',
+         message: 'Performed the Action!',
+         data: result,
+      });
+   } catch (error) {
+      res.status(400).send({
+         status: 'Failed',
+         message: 'Something Went Wrong!',
+         error: error?.message,
+      });
+   }
+};
 
 exports.patchTour = async (req, res, nex) => {
    try {
