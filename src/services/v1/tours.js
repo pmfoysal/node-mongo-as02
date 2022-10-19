@@ -10,7 +10,7 @@ exports.getTours = async queries => {
    return {
       totalItems: data?.length,
       totalPages: Math.ceil(data?.length / (Number(queries?.limit) || data?.length)),
-      data: data?.slice(start, start + Number(queries?.limit)),
+      data: queries?.limit && queries?.page ? data?.slice(start, start + Number(queries?.limit)) : data,
    };
 };
 
