@@ -1,6 +1,6 @@
 {
-   "status": 200,
-   "message": "Successfully Performed the Action",
+   "status": "Success",
+   "message": "Performed the Action",
    "data": {
       "totalItems": 10,
       "totalPages": 1,
