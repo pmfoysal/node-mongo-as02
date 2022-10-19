@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const valid = require('validator').default;
 
-const tourSchema = mongoose.Schema(
+const toursSchema = mongoose.Schema(
    {
       name: {
          type: String,
@@ -49,4 +49,4 @@ const tourSchema = mongoose.Schema(
    }
 );
 
-module.exports = mongoose.model('Tour', tourSchema);
+module.exports = mongoose.model('tours', toursSchema);
