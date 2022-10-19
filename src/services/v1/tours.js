@@ -20,5 +20,6 @@ exports.postTours = async data => {
 
 exports.getTour = async (id, fields) => {
    const queries = fields?.replaceAll(/[\, ]/g, ' ');
+   await tours?.updateOne({ _id: id }, { $inc: { views: 1 } });
    return await tours?.findById(id, queries);
 };
