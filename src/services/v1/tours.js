@@ -4,7 +4,7 @@ exports.getTours = async queries => {
    const fields = queries?.fields?.replaceAll(/[\, ]/g, ' ');
    const start = queries?.limit * (queries?.page - 1);
    const data = await tours
-      ?.find({ name: { $regex: queries?.search, $options: 'i' }, ...queries?.filter }, fields)
+      ?.find({ name: { $regex: queries?.search || '', $options: 'i' }, ...queries?.filter }, fields)
       .sort(queries?.sort);
 
    return {
